@@ -18,8 +18,9 @@ class Tarjeta extends Component{
         }]
 
         return(
-            <div>
-
+            <div className="tarjeta">
+            
+               
             </div>
         )
     }

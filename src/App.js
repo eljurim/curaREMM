@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 
 import Header from './Components/Header'
 import Content from './Components/Content'
+import Tarjeta from './Components/Tarjeta'
 import './App.css';
 
 class App extends Component {
@@ -14,6 +15,10 @@ class App extends Component {
         </header>
         <div className="App-content">
           <Content />
+        </div>
+
+        <div className="App-tarjeta">
+          <Tarjeta />
         </div>
       </div>
     );
