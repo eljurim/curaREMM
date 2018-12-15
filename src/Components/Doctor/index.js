@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Tarjeta from './../Tarjeta'
 
 class Doctor extends Component {
     constructor(props){

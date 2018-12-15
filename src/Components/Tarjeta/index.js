@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import '../Tarjeta/Tarjeta.css'
 import Doctor from '../Doctor'
+
+
 class Tarjeta extends Component{
     render(){
 
@@ -15,10 +17,17 @@ class Tarjeta extends Component{
             "especialidad":"Cardiologo",
             "puntuacion": 5,
             "telefono": 66840957
+        },{
+            "name": "Edgar",
+            "especialidad":"Cardiologo",
+            "puntuacion": 1,
+            "telefono": 66840960
         }]
 
         let doctorRender = doctors.map(doctor =>{
+                
                 let {name,especialidad,puntuacion,telefono} = doctor;
+                console.log(doctor)
                 return(
                         <Doctor name={name}
                         especialidad={especialidad}
@@ -32,7 +41,7 @@ class Tarjeta extends Component{
 
        
         return(
-            <div className="tarjeta">
+            <div className="contenido-tarjetas">
             {doctorRender}
                
             </div>
