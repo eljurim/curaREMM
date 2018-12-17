@@ -8,7 +8,7 @@ class Header extends Component{
             <div className = "title">
             <h1>CuraREMM</h1>
             </div>
-                <button className="mapa">mapa</button>
+                <button className="mapa" >mapa</button>
                 <button className="encuentra">Encuentra</button>
                 <button className="agenda">Agenda</button>
                 
