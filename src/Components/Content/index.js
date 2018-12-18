@@ -1,17 +1,27 @@
 import React, { Component } from 'react'
-import image from  '../../assets/close-up-doctor.jpg'
+// import image from '../../assets/close-up-doctor.jpg'
 
 import './Content.css'
 
-class Content extends Component{
-    render(){  
-      return(
-        <div className="content" style={ { backgroundImage: `url(${ image })`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' } }>
-          <div className="jumbotron">
+class Content extends Component {
+    render() {  
+      return (
+        <div className = 'principal-content'>
+          {/* <div
+            className="image-content"
+            style={ { 
+              backgroundImage: `url(${ image })`,
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat' 
+            } }
+          >  
+          </div>  */}
+
+          <div className = 'specialties-content'>
             <h2>Encuentra tu servicio médico de confianza</h2>
-            <div className="dropdown">
+            <div className = 'specialties-dropdown'>
               <a
-                className="btn btn-primary dropdown-toggle"
+                className="btn btn-info dropdown-toggle"
                 href="#"
                 role="button"
                 id="dropdownMenuLink"
@@ -28,8 +38,8 @@ class Content extends Component{
               <a className="dropdown-item" href="#">Dermatologo</a>
               <a className="dropdown-item" href="#">Cardiologo</a>
             </div>
-            <button className="cercano">El más cercano</button>
-            <button>El más rapido</button>
+            <button className = 'near'>El más cercano</button>
+            <button className = 'quick'>El más rapido</button>
           </div>
         </div>
         )

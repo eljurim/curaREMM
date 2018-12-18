@@ -4,19 +4,19 @@ import './Header.css'
 class Header extends Component{
     render(){
         return(
-        <div>
+        <div className = "header">
             <div className = "title">
-            <h1>CuraREMM</h1>
+            <h1>CurandoMe</h1>
             </div>
-                <button className="mapa" >mapa</button>
-                <button className="encuentra">Encuentra</button>
-                <button className="agenda">Agenda</button>
-                
-            <div className="login">
-                <button className="register">Registro</button>
-                <button className="log">Login</button>
+            <div className = "nav-buttons">
+                <button className="map btn btn-default btn-md" >Mapa</button>
+                <button className="find btn btn-info btn-md">Encuentra</button>
+                <button className="schedule btn btn-default btn-md">Agenda</button>
+            </div>  
+            <div className="access-buttons">
+                <button className="register btn btn-info btn-md">Registro</button>
+                <button className="login btn btn-default btn-md">Login</button>
             </div>
-
         </div>
         )}
 }
