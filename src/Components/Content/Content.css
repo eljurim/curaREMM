@@ -1,11 +1,13 @@
 .principal-content {
+    display: flex;
+    justify-content: center;
     width: 90vw;
     height: 40vh;
     background-color: #FEF6FF;
-    box-shadow: 0 0 6px 4px gray;
+    border-radius: 2px;
+    box-shadow: 0 0 6px 2px gray;
     padding: 2%;
-    margin-left: 5vw;
-    border-radius: 8px;
+    margin: 2% 5vw 2% 5vw;
 }
 
 .specialties-content {
@@ -14,7 +16,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    justify-content: center;
 }
 
 .specialties-content h2 {
@@ -29,12 +31,11 @@
 .specialties-content .specialties-dropdown {
     display: flex;
     flex-direction: column;
-    width: 30vw;
-    height: 10vh;
-    /*border: 1px solid red;*/
     justify-content: center;
+    width: 33vw;
+    height: 10vh;
+    /* box-shadow: 0 0 5px 2px gray; */
 }
-
 
 .dropdown-menu {
 
@@ -46,20 +47,24 @@
 
 .buttons {
     display: flex;
-    /*border: 1px solid blue;*/
+    justify-content: center;
+    align-items: center;
     width: 40vw;
     height: 10vh;
-    justify-content: center;
 }
 
 .buttons .near {
-    margin-right: 2vw;
+    margin-right: 1.5vw;
     margin-left: 2vw;
     height: 7vh;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 2px gray;
 }
 
-.quick {
+.buttons .quick {
     margin-right: 2vw;
-    margin-left: 2vw;
+    margin-left: 1.5vw;
     height: 7vh;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 3px gray;
 }

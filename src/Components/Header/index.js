@@ -1,12 +1,13 @@
 import React , { Component } from 'react';
+import logo from '../../curandoMe-white-logo-min.png';
 
 import './Header.css'
 class Header extends Component{
     render(){
         return(
         <div className = "header">
-            <div className = "title">
-            <h1>CurandoMe</h1>
+            <div className = "image">
+                <img src = { logo } alt = "Logo curando.Me"/>
             </div>
             <div className = "nav-buttons">
                 <button className="map btn btn-info btn-md" >Mapa</button>
