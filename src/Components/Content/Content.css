@@ -5,9 +5,9 @@
     height: 40vh;
     background-color: #FEF6FF;
     border-radius: 2px;
-    box-shadow: 0 0 6px 2px gray;
-    padding: 2%;
+    box-shadow: 0 1px 3px 2px gray;
     margin: 2% 5vw 2% 5vw;
+    padding: 2%;
 }
 
 .specialties-content {
@@ -34,7 +34,7 @@
     justify-content: center;
     width: 33vw;
     height: 10vh;
-    /* box-shadow: 0 0 5px 2px gray; */
+    /* box-shadow: 0 1px 3px 1px gray; */
 }
 
 .dropdown-menu {
@@ -58,7 +58,8 @@
     margin-left: 2vw;
     height: 7vh;
     border-radius: 3px;
-    box-shadow: 0 0 5px 2px gray;
+    box-shadow: 0 1px 3px 1px gray;
+    font-size: .85rem;
 }
 
 .buttons .quick {
@@ -66,5 +67,6 @@
     margin-left: 1.5vw;
     height: 7vh;
     border-radius: 3px;
-    box-shadow: 0 0 5px 3px gray;
+    box-shadow: 0 1px 3px 1px gray;
+    font-size: .85rem;
 }

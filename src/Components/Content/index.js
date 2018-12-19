@@ -29,8 +29,8 @@ class Content extends Component {
               <a className="dropdown-item" href="#">Cardiologo</a>
             </div>
             <div className = 'buttons'>
-            <button className = 'near btn btn-primary'>El más cercano</button>
-            <button className = 'quick btn btn-primary'>El más rapido</button>
+            <button className = 'near btn btn-primary'>MÁS CERCANO</button>
+            <button className = 'quick btn btn-primary'>MÁS RÁPIDO</button>
             </div>
             
           </div>

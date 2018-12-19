@@ -10,13 +10,13 @@ class Header extends Component{
                 <img src = { logo } alt = "Logo curando.Me"/>
             </div>
             <div className = "nav-buttons">
-                <button className="map btn btn-info btn-md" >Mapa</button>
-                <button className="find btn btn-info btn-md">Encuentra</button>
-                <button className="schedule btn btn-info btn-md">Agenda</button>
+                {/* <button className="map btn btn-default" >MAPA</button> */}
+                <button className="find btn btn-default">ENCUENTRA</button>
+                <button className="schedule btn btn-default">AGENDA</button>
             </div>  
             <div className="access-buttons">
-                <button className="register btn btn-info btn-md">Registro</button>
-                <button className="login btn btn-info btn-md">Login</button>
+                <button className="register btn btn-primary">REGISTRO</button>
+                <button className="login btn btn-primary">LOGIN</button>
             </div>
         </div>
         )}
