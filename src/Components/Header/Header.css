@@ -4,14 +4,14 @@
     height: 30vh;
     display: block;
     word-wrap: break-word;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding: 10px;
 }
 
 .title {
     display:inline-block;
     margin-right:5vw;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 h1{
@@ -20,14 +20,15 @@ h1{
     font-size: 2.5rem;
     color: #1976d2;
     display: inline-block;
-    margin-left: 3px;   
+    margin-left: 3px;
+    padding: 4px;
 }
 
 .nav-buttons {
     display: inline-flex;
     margin-right: 5vw;
     padding: 4px;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
 }
 
 .map {
@@ -59,23 +60,28 @@ button.mapa:hover {
 
 .access-buttons {
     display: inline-flex;
-    border: 2px solid purple;
-}
-
-.login{
-    display: flex;
-    /* margin-right: 12.5%; */
-    float: right;
+    margin-right: 5vw;
+    padding: 4px;
+    /* border: 2px solid purple; */
 }
 
 .register{
-    /* margin-right: 5px; */
     border-radius: 10px;
     width: 10vw;
+    background-color: #1976d2;
+    margin-left: 5%;
 }
 
-.log{
-    /* margin-right: 5px; */
+.login{
     border-radius: 10px;
     width: 10vw;
+    background-color: #1976d2;
+    margin-left: 5%;
 }
+
+/* .log{
+    border-radius: 10px;
+    width: 10vw;
+    background-color: #1976d2;
+    margin-left: 5%;
+} */
