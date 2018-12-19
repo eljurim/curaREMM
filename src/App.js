@@ -39,7 +39,6 @@ e.preventDefault()
         <div className="App-content">
           <Content />
         </div>
-        <SpecialtySelector/>
         <div className="App-tarjeta">
         </div>
         <div>
