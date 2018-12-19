@@ -1,9 +1,60 @@
 import React, { Component } from 'react'
 
+//borrar esto en cuanto se pueda
+import doctor from  '../../assets/index.jpeg'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar} from '@fortawesome/free-solid-svg-icons'
+
 import './Content.css'
 
 class Content extends Component {
+    
+    constructor(props) {
+        super(props);
+        // Don't call this.setState() here!
+        this.state = { listToShow: [] };
+        this.listTester = this.listTester.bind(this);
+      }
+      
+    
+      async listTester  (evt){
+        evt.preventDefault();
+            let target = evt.target
+            let specialty = target.value
+            let listToShow = await fetch('https://genussys.appspot.com/doctors/findBySpecialty',{
+                method: 'POST',
+                body: JSON.stringify({"specialties": specialty}), // data can be `string` or {object}!
+                headers:{
+                'Content-Type': 'application/json'
+            }}).then(res=>res.json())
+    
+            this.setState({ listToShow });
+    
+    
+            
+            console.log(this.state.listToShow)
+    
+      }
+
+
     render() {  
+
+      let htmlList = this.state.listToShow.map((currentValue)=>{
+        return(<div className="App-Doctor">
+        <div className="photo"style={ { backgroundImage: 
+            `url(${ doctor })`, backgroundSize: 'cover',backgroundRepeat: 'no-repeat' } }>
+        </div>
+        <div className="Data-doctor">
+        <span>{doctor.name}</span>
+        <span>Odontologo</span>
+        <span> <FontAwesomeIcon icon="star" /></span>
+        <span>calle Marmolejo #107 col.cerro de la estrella int. 4 iztapalapa, CDMX</span>
+        </div>
+    </div>)
+})
+
+
       return (
         <div className = 'principal-content'>
           <div className = 'specialties-content'>
