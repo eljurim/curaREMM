@@ -29,7 +29,10 @@ class Tarjeta extends Component{
                 let {name,especialidad,puntuacion,telefono} = doctor;
                 console.log(doctor)
                 return(
-                        <Doctor name={name}
+                        <Doctor 
+                        
+                       
+                        name={name}
                         especialidad={especialidad}
                         puntuacion={puntuacion}
                         telefono={telefono}>

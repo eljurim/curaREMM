@@ -11,7 +11,7 @@ class Content extends Component {
             <h2>Encuentra tu servicio médico de confianza</h2>
             <div className = 'specialties-dropdown'>
               <a
-                className="btn btn-info dropdown-toggle"
+                className="btn btn-default dropdown-toggle"
                 href="#"
                 role="button"
                 id="dropdownMenuLink"
@@ -19,7 +19,7 @@ class Content extends Component {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-              Especialidades
+              ESPECIALIDADES  
               </a>
             </div>
             <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -29,8 +29,8 @@ class Content extends Component {
               <a className="dropdown-item" href="#">Cardiologo</a>
             </div>
             <div className = 'buttons'>
-            <button className = 'near btn btn-primary btn-md'>El más cercano</button>
-            <button className = 'quick btn btn-primary btn-md'>El más rapido</button>
+            <button className = 'near btn btn-primary'>El más cercano</button>
+            <button className = 'quick btn btn-primary'>El más rapido</button>
             </div>
             
           </div>
