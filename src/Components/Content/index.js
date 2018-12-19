@@ -5,6 +5,7 @@ import doctor from  '../../assets/index.jpeg'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar} from '@fortawesome/free-solid-svg-icons'
+import './Doctor.css'
 
 import './Content.css'
 
