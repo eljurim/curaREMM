@@ -1,17 +1,25 @@
 import React, { Component } from 'react'
-import image from  '../../assets/close-up-doctor.jpg'
 
 import './Content.css'
 
-class Content extends Component{
-    render(){  
-      return(
-        <div className="content" style={ { backgroundImage: `url(${ image })`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' } }>
-          <div className="jumbotron">
+class Content extends Component {
+    render() {  
+      return (
+        <div className = 'principal-content'>
+          <div className = 'specialties-content'>
             <h2>Encuentra tu servicio médico de confianza</h2>
-            <div className="dropdown">
+          <select className="custom-select" onChange={this.listTester} id="inputGroupSelect04" aria-label="Example select with button addon">
+                <option selected>Choose...</option>
+                <option value='Cirugia Plastica y Reconst.'>Cirugia Plastica y Reconst.</option>
+                <option value='Ortopedia y Traumatologia'>Ortopedia y Traumatologia</option>
+                <option value='Oftalmologia'>Oftalmologia</option>
+                <option value='Medicina Interna'>Medicina Interna</option>
+                <option value='Ginecologia y Obst.'>Ginecologia y Obst.</option>
+                <option value='Medicina de Rehabilitacion'>Medicina de Rehabilitacion</option>
+              </select>
+            <div className = 'specialties-dropdown'>
               <a
-                className="btn btn-primary dropdown-toggle"
+                className="btn btn-default dropdown-toggle"
                 href="#"
                 role="button"
                 id="dropdownMenuLink"
@@ -19,7 +27,7 @@ class Content extends Component{
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-              Especialidades
+              ESPECIALIDADES  
               </a>
             </div>
             <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -28,8 +36,11 @@ class Content extends Component{
               <a className="dropdown-item" href="#">Dermatologo</a>
               <a className="dropdown-item" href="#">Cardiologo</a>
             </div>
-              <button className="cercano">El más cercano</button>
-              <button>El más rapido</button>
+
+            <div className = 'buttons'>
+            <button className = 'near btn btn-primary'>MÁS CERCANO</button>
+            <button className = 'quick btn btn-primary'>MÁS RÁPIDO</button>
+            </div>
             
           </div>
         </div>
