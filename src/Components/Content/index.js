@@ -28,8 +28,9 @@ class Content extends Component{
               <a className="dropdown-item" href="#">Dermatologo</a>
               <a className="dropdown-item" href="#">Cardiologo</a>
             </div>
-            <button className="cercano">El más cercano</button>
-            <button>El más rapido</button>
+              <button className="cercano">El más cercano</button>
+              <button>El más rapido</button>
+            
           </div>
         </div>
         )

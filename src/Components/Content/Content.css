@@ -31,9 +31,9 @@ img{
 */
 
 .dropdown, .dropleft, .dropright, .dropup {
-    position: relative;
     padding-top: 55vh;
     text-align: center;
+    display: inline-block
 }
 
 .cercano{
