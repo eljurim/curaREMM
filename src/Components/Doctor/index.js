@@ -11,35 +11,12 @@ library.add(faStar)
 
 
 class Doctor extends Component {
-    
-    constructor(props) {
-        super(props);
-        // Don't call this.setState() here!
-        this.state = { listToShow: [] };
-        this.listTester = this.listTester.bind(this);
-      }
-      
-    
-      async listTester  (evt){
-        evt.preventDefault();
-            let target = evt.target
-            let specialty = target.value
-            let listToShow = await fetch('https://genussys.appspot.com/doctors/findBySpecialty',{
-                method: 'POST',
-                body: JSON.stringify({"specialties": specialty}), // data can be `string` or {object}!
-                headers:{
-                'Content-Type': 'application/json'
-            }}).then(res=>res.json())
-    
-            this.setState({ listToShow });
-    
-    
-            
-            console.log(this.state.listToShow)
-    
-      }
 
     render(){
+        
+        
+
+
         let doctors =[{
             "name": "manuel",
             "especialidad":"Odontologo",
