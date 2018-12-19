@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// import image from '../../assets/close-up-doctor.jpg'
 
 import './Content.css'
 
@@ -7,15 +6,6 @@ class Content extends Component {
     render() {  
       return (
         <div className = 'principal-content'>
-          {/* <div
-            className="image-content"
-            style={ { 
-              backgroundImage: `url(${ image })`,
-              backgroundSize: 'cover',
-              backgroundRepeat: 'no-repeat' 
-            } }
-          >  
-          </div>  */}
 
           <div className = 'specialties-content'>
             <h2>Encuentra tu servicio médico de confianza</h2>
@@ -38,8 +28,11 @@ class Content extends Component {
               <a className="dropdown-item" href="#">Dermatologo</a>
               <a className="dropdown-item" href="#">Cardiologo</a>
             </div>
-            <button className = 'near'>El más cercano</button>
-            <button className = 'quick'>El más rapido</button>
+            <div className = 'buttons'>
+            <button className = 'near btn btn-primary btn-md'>El más cercano</button>
+            <button className = 'quick btn btn-primary btn-md'>El más rapido</button>
+            </div>
+            
           </div>
         </div>
         )
