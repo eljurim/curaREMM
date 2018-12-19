@@ -12,6 +12,7 @@ import Content from './Components/Content'
 import Footer from './Components/Footer'
 import SpecialtySelector from './Components/SpecialtySelector/newSpecialtySelector'
 import './App.css';
+import Tarjeta from './Components/Tarjeta';
 
 class App extends Component {
   constructor(props) {
@@ -39,7 +40,8 @@ e.preventDefault()
         <div className="App-content">
           <Content />
         </div>
-        <div className="App-tarjeta">
+          <div className="App-tarjeta">
+          <Tarjeta></Tarjeta>
         </div>
         <div>
           <Footer />
