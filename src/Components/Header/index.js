@@ -9,13 +9,13 @@ class Header extends Component{
             <h1>CurandoMe</h1>
             </div>
             <div className = "nav-buttons">
-                <button className="map btn btn-default btn-md" >Mapa</button>
+                <button className="map btn btn-info btn-md" >Mapa</button>
                 <button className="find btn btn-info btn-md">Encuentra</button>
-                <button className="schedule btn btn-default btn-md">Agenda</button>
+                <button className="schedule btn btn-info btn-md">Agenda</button>
             </div>  
             <div className="access-buttons">
                 <button className="register btn btn-info btn-md">Registro</button>
-                <button className="login btn btn-default btn-md">Login</button>
+                <button className="login btn btn-info btn-md">Login</button>
             </div>
         </div>
         )}
