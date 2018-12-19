@@ -15,20 +15,6 @@ import './App.css';
 import Tarjeta from './Components/Tarjeta';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    // Don't call this.setState() here!
-    this.state = { doctorsList: [] };
-    this.doctorsListSetter = this.doctorsListSetter.bind(this);
-  }
-
-doctorsListSetter(e) {
-e.preventDefault()
-
-
-}
-
-
 
   render() {
     return (
