@@ -27,7 +27,6 @@ class App extends Component {
           <Content />
         </div>
           <div className="App-tarjeta">
-          <Tarjeta></Tarjeta>
         </div>
         <div>
           <Footer />

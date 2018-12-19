@@ -47,16 +47,17 @@ class Content extends Component {
             `url(${ doctor })`, backgroundSize: 'cover',backgroundRepeat: 'no-repeat' } }>
         </div>
         <div className="Data-doctor">
-        <span>{doctor.name}</span>
-        <span>Odontologo</span>
+        <span>{currentValue.name}</span>
+        <span>{currentValue.specialties}</span>
         <span> <FontAwesomeIcon icon="star" /></span>
-        <span>calle Marmolejo #107 col.cerro de la estrella int. 4 iztapalapa, CDMX</span>
+        <span>{currentValue.workPlaces}</span>
         </div>
     </div>)
 })
 
 
       return (
+        <div>
         <div className = 'principal-content'>
           <div className = 'specialties-content'>
             <h2>Encuentra tu servicio médico de confianza</h2>
@@ -95,7 +96,10 @@ class Content extends Component {
             </div>
             
           </div>
+         
         </div>
+         <div id="card-wrapper">{htmlList}</div>
+         </div>
         )
     }
 }
