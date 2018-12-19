@@ -36,12 +36,12 @@
     display: flex;
 }
 
-.dropdown, .dropleft, .dropright, .dropup {
+/* .dropdown, .dropleft, .dropright, .dropup {
     position: relative;
     display: inline-block;
     padding-top: 55vh;
     text-align: center;
-}
+} */
 
 .dropdown-menu {
 
