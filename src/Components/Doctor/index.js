@@ -11,11 +11,12 @@ library.add(faStar)
 
 
 class Doctor extends Component {
-    constructor(props){
-        super(props);
-    }
 
     render(){
+        
+        
+
+
         let doctors =[{
             "name": "manuel",
             "especialidad":"Odontologo",
