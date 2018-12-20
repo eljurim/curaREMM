@@ -14,7 +14,11 @@ class Content extends Component {
     constructor(props) {
         super(props);
         // Don't call this.setState() here!
-        this.state = { listToShow: [] };
+        this.state = { 
+          listToShow: [],
+          specialtiesList: [],
+         };
+
         this.listTester = this.listTester.bind(this);
       }
       
@@ -38,10 +42,18 @@ class Content extends Component {
     
       }
 
+      async componentWillMount() {
+         let specialtiesList = await  fetch('http://localhost:8080/doctors/specialtiesList').then(res=>res.json())
+          this.setState({specialtiesList})
+          console.log(this.state.specialtiesList)
+       }
+
 
     render() {  
-
-      let htmlList = this.state.listToShow.map((currentValue)=>{
+      let specialtiesDropdown = this.state.specialtiesList.map((currentValue)=>{
+        return (<option value={currentValue}>{currentValue}</option>)
+      })
+      let doctorsList = this.state.listToShow.map((currentValue)=>{
         return(<div className="App-Doctor">
         <div className="photo"style={ { backgroundImage: 
             `url(${ doctor })`, backgroundSize: 'cover',backgroundRepeat: 'no-repeat' } }>
@@ -63,12 +75,7 @@ class Content extends Component {
             <h2>Encuentra tu servicio médico de confianza</h2>
           <select className="custom-select" onChange={this.listTester} id="inputGroupSelect04" aria-label="Example select with button addon">
                 <option selected>Choose...</option>
-                <option value='Cirugia Plastica y Reconst.'>Cirugia Plastica y Reconst.</option>
-                <option value='Ortopedia y Traumatologia'>Ortopedia y Traumatologia</option>
-                <option value='Oftalmologia'>Oftalmologia</option>
-                <option value='Medicina Interna'>Medicina Interna</option>
-                <option value='Ginecologia y Obst.'>Ginecologia y Obst.</option>
-                <option value='Medicina de Rehabilitacion'>Medicina de Rehabilitacion</option>
+                {specialtiesDropdown}
               </select>
             <div className = 'specialties-dropdown'>
               <a
@@ -98,7 +105,7 @@ class Content extends Component {
           </div>
          
         </div>
-         <div id="card-wrapper">{htmlList}</div>
+         <div id="card-wrapper">{doctorsList}</div>
          </div>
         )
     }
