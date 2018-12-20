@@ -43,7 +43,7 @@ class Content extends Component {
       }
 
       async componentWillMount() {
-         let specialtiesList = await  fetch('http://localhost:8080/doctors/specialtiesList').then(res=>res.json())
+         let specialtiesList = await  fetch('https://genussys.appspot.com/doctors/specialtiesList').then(res=>res.json())
           this.setState({specialtiesList})
           console.log(this.state.specialtiesList)
        }
