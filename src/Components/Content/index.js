@@ -79,7 +79,7 @@ class Content extends Component {
               </select>
             <div className = 'specialties-dropdown'>
               <a
-                className="btn btn-default dropdown-toggle"
+                className="dropdown-toggle"
                 href="#"
                 role="button"
                 id="dropdownMenuLink"
@@ -87,7 +87,7 @@ class Content extends Component {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-              ESPECIALIDADES  
+              ESPECIALIDADES   
               </a>
             </div>
             <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -95,7 +95,7 @@ class Content extends Component {
               <a className="dropdown-item" href="#">Oncologo</a>
               <a className="dropdown-item" href="#">Dermatologo</a>
               <a className="dropdown-item" href="#">Cardiologo</a>
-            </div>
+            </div> */}
 
             <div className = 'buttons'>
             <button className = 'near btn btn-primary'>MÁS CERCANO</button>
