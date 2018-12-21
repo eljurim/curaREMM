@@ -3,9 +3,9 @@ import filledStar from '../../assets/star-solid.png'
 import emptyStar from '../../assets/star-regular.png'
 //borrar esto en cuanto se pueda
 import doctor from  '../../assets/index.jpeg'
-import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar} from '@fortawesome/free-solid-svg-icons'
+
+
 import './Doctor.css'
 
 import './Content.css'
@@ -16,10 +16,10 @@ class Content extends Component {
         super(props);
         // Don't call this.setState() here!
         this.state = { 
-          listToShow: [],
-          specialtiesList: [],
-          userPosition:{}
-         };
+            listToShow: [],
+            specialtiesList: [],
+            userPosition:{}
+           };
 
         this.listTester = this.listTester.bind(this);
       }
@@ -50,18 +50,18 @@ class Content extends Component {
       }
 
       async componentWillMount() {
-         let specialtiesList = await  fetch('https://genussys.appspot.com/doctors/specialtiesList').then(res=>res.json())
-          this.setState({specialtiesList})
-          console.log(this.state.specialtiesList)
+        let specialtiesList = await  fetch('https://genussys.appspot.com/doctors/specialtiesList').then(res=>res.json())
+         this.setState({specialtiesList})
+         console.log(this.state.specialtiesList)
 
-          await navigator.geolocation.getCurrentPosition(position=>{
-            let latitude = position.coords.latitude
-            let longitude = position.coords.longitude
-            this.setState({userPosition:{latitude,longitude}})
-            console.log(this.state.userPosition)
-          })
+         await navigator.geolocation.getCurrentPosition(position=>{
+           let latitude = position.coords.latitude
+           let longitude = position.coords.longitude
+           this.setState({userPosition:{latitude,longitude}})
+           console.log(this.state.userPosition)
+         })
 
-       }
+      }
 
 
     render() {  
@@ -79,7 +79,7 @@ class Content extends Component {
           }
 
         return(<div className="App-Doctor">
-        <div className="photo"style={ { backgroundImage: 
+        <div className="photo" style={ { backgroundImage: 
             `url(${ doctor })`, backgroundSize: 'cover',backgroundRepeat: 'no-repeat' } }>
         </div>
         <div className="Data-doctor">
