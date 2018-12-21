@@ -135,8 +135,5 @@ class Content extends Component {
         )
     }
 }
-<<<<<<< HEAD
-
 export default Content;
-=======
->>>>>>> 82931225e1ed82df1d0173a40e4007ef725b9aac
+
