@@ -26,7 +26,6 @@
 .Data-doctor {
 
     display: inline-block;
-    width: 70%;
 
 }
 
@@ -35,17 +34,5 @@ span {
     display: block;
     font-size: 9.5px;
     text-align: center;
-
-}
-
-span.star{
-    display: inline-block;
-    text-align: center
-}
-
-.score {
-
-    display: flex;
-    justify-content: center;
 
 }

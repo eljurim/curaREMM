@@ -23,6 +23,10 @@
     height: 12vh;
 }
 
+.buttons {
+    display: flex;
+}
+
 .nav-buttons {
     display: inline-flex;
     margin: 2% 3vw 2% 3vw;
