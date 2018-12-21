@@ -87,6 +87,7 @@ class Content extends Component {
         <span>{currentValue.specialties}</span>
         <div> {starArray} <span>({currentValue.qualification.count})</span></div>
         <span>Ciudad de Mexico</span>
+        <span><b>Distancia: </b>{Math.round(currentValue.distance * 100) / 100} Km</span>
         </div>
     </div>)
 })
