@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import $ from 'jquery';
-import Popper from 'popper.js';
+// import $ from 'jquery';
+// import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 
@@ -12,7 +12,11 @@ import Content from './Components/Content'
 import Footer from './Components/Footer'
 import SpecialtySelector from './Components/SpecialtySelector/newSpecialtySelector'
 import './App.css';
-import Tarjeta from './Components/Tarjeta';
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faStar} from '@fortawesome/free-solid-svg-icons'
+
+library.add(faStar)
 
 class App extends Component {
 

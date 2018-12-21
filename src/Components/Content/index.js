@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 
 //borrar esto en cuanto se pueda
 import doctor from  '../../assets/index.jpeg'
-import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar} from '@fortawesome/free-solid-svg-icons'
+
+
 import './Doctor.css'
 
 import './Content.css'
@@ -55,14 +55,15 @@ class Content extends Component {
       })
       let doctorsList = this.state.listToShow.map((currentValue)=>{
         return(<div className="App-Doctor">
-        <div className="photo"style={ { backgroundImage: 
+        <div className="photo" style={ { backgroundImage: 
             `url(${ doctor })`, backgroundSize: 'cover',backgroundRepeat: 'no-repeat' } }>
         </div>
         <div className="Data-doctor">
-        <span>{currentValue.name}</span>
-        <span>{currentValue.specialties}</span>
-        <span> <FontAwesomeIcon icon="star" /></span>
-        <span>{currentValue.workPlaces}</span>
+        <span className = "Doctor-name">{currentValue.name}</span>
+        <span className = "Doctor-specialty">{currentValue.specialties}</span>
+       
+        <span className="Doctor-address">Mexico City</span>
+        <span className="star-icon"> <FontAwesomeIcon icon="star" /></span>
         </div>
     </div>)
 })
