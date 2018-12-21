@@ -1,5 +1,5 @@
 import React , { Component } from 'react';
-import logo from '../../curandoMe-white-logo-min.png';
+import logo from '../../assets/curandoMe-white-logo-min.png';
 
 import './Header.css'
 class Header extends Component{
