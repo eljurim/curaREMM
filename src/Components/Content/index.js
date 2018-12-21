@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-
+import filledStar from '../../assets/star-solid.png'
+import emptyStar from '../../assets/star-regular.png'
 //borrar esto en cuanto se pueda
 import doctor from  '../../assets/index.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -54,16 +55,24 @@ class Content extends Component {
         return (<option value={currentValue}>{currentValue}</option>)
       })
       let doctorsList = this.state.listToShow.map((currentValue)=>{
+
+
+          let starArray = [<img src={emptyStar} alt={emptyStar}/>,<img src={emptyStar} alt={emptyStar}/>,<img src={emptyStar} alt={emptyStar}/>,<img src={emptyStar} alt={emptyStar}/>,<img src={emptyStar} alt={emptyStar}/>]
+          
+          for (let index = 0; index < currentValue.qualification.stars; index++) {
+            starArray[index] = <img src={filledStar} alt={filledStar}/>
+            
+          }
+
         return(<div className="App-Doctor">
         <div className="photo" style={ { backgroundImage: 
             `url(${ doctor })`, backgroundSize: 'cover',backgroundRepeat: 'no-repeat' } }>
         </div>
         <div className="Data-doctor">
-        <span className = "Doctor-name">{currentValue.name}</span>
-        <span className = "Doctor-specialty">{currentValue.specialties}</span>
-       
-        <span className="Doctor-address">Mexico City</span>
-        <span className="star-icon"> <FontAwesomeIcon icon="star" /></span>
+        <span>{currentValue.name}</span>
+        <span>{currentValue.specialties}</span>
+        <div> {starArray} <span>({currentValue.qualification.count})</span></div>
+        <span>Ciudad de Mexico</span>
         </div>
     </div>)
 })
