@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
-
+import SimpleExample from './Components/LeafLet'
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 

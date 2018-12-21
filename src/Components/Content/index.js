@@ -21,8 +21,10 @@ class Content extends Component {
             userPosition:{}
            };
 
-        this.listTester = this.listTester.bind(this);
-      }
+           this.listTester = this.listTester.bind(this);
+           this.sortByNearest = this.sortByNearest.bind(this);
+           this.sortByQualification = this.sortByQualification.bind(this);
+          }
       
     
       async listTester  (evt){
@@ -47,6 +49,76 @@ class Content extends Component {
             
             console.log(this.state.listToShow)
     
+      }
+
+      sortByNearest(){
+        
+        const bands = this.state.listToShow
+        
+        function compareValues(key, order='asc') {
+          return function(a, b) {
+            if(!a.hasOwnProperty(key) || 
+               !b.hasOwnProperty(key)) {
+              return 0; 
+            }
+            
+            const varA = (typeof a[key] === 'string') ? 
+              a[key].toUpperCase() : a[key];
+            const varB = (typeof b[key] === 'string') ? 
+              b[key].toUpperCase() : b[key];
+              
+            let comparison = 0;
+            if (varA > varB) {
+              comparison = 1;
+            } else if (varA < varB) {
+              comparison = -1;
+            }
+            return (
+              (order == 'desc') ? 
+              (comparison * -1) : comparison
+            );
+          };
+        }
+        
+        
+          let newOrder =  bands.sort(compareValues('distance'))
+        console.log(newOrder)
+        this.setState({"listToShow":newOrder})
+      }
+
+      sortByQualification() {
+        
+        const bands = this.state.listToShow
+        
+        function compareValues(key, order='asc') {
+          return function(a, b) {
+            if(!a.hasOwnProperty(key) || 
+               !b.hasOwnProperty(key)) {
+              return 0; 
+            }
+            
+            const varA = (typeof a[key] === 'string') ? 
+              a[key].toUpperCase() : a[key];
+            const varB = (typeof b[key] === 'string') ? 
+              b[key].toUpperCase() : b[key];
+              
+            let comparison = 0;
+            if (varA > varB) {
+              comparison = 1;
+            } else if (varA < varB) {
+              comparison = -1;
+            }
+            return (
+              (order == 'desc') ? 
+              (comparison * -1) : comparison
+            );
+          };
+        }
+        
+        
+          let newOrder =  bands.sort(compareValues('qualification.stars'))
+        console.log(newOrder)
+        this.setState({"listToShow":newOrder})
       }
 
       async componentWillMount() {
@@ -104,8 +176,8 @@ class Content extends Component {
               </select>
 
             <div className = 'buttons'>
-            <button className = 'near btn btn-primary'>MÁS CERCANO</button>
-            <button className = 'quick btn btn-primary'>MÁS RÁPIDO</button>
+            <button className = 'near btn btn-primary' onClick={this.sortByNearest}>MÁS CERCANO</button>
+            <button className = 'quick btn btn-primary' onClick={this.sortByQualification}>MÁS RÁPIDO</button>
             </div>
             
           </div>
