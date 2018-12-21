@@ -18,6 +18,7 @@ class Content extends Component {
         this.state = { 
           listToShow: [],
           specialtiesList: [],
+          userPosition:{}
          };
 
         this.listTester = this.listTester.bind(this);
@@ -29,8 +30,13 @@ class Content extends Component {
             let target = evt.target
             let specialty = target.value
             let listToShow = await fetch('https://genussys.appspot.com/doctors/findBySpecialty',{
+            //let listToShow = await fetch('http://localhost:8080/doctors/findBySpecialty',{
                 method: 'POST',
-                body: JSON.stringify({"specialties": specialty}), // data can be `string` or {object}!
+                body: JSON.stringify({
+                  "specialties": specialty,
+                  "latitude":this.state.userPosition.latitude,
+                  "longitude":this.state.userPosition.longitude
+              }), // data can be `string` or {object}!
                 headers:{
                 'Content-Type': 'application/json'
             }}).then(res=>res.json())
@@ -47,6 +53,14 @@ class Content extends Component {
          let specialtiesList = await  fetch('https://genussys.appspot.com/doctors/specialtiesList').then(res=>res.json())
           this.setState({specialtiesList})
           console.log(this.state.specialtiesList)
+
+          await navigator.geolocation.getCurrentPosition(position=>{
+            let latitude = position.coords.latitude
+            let longitude = position.coords.longitude
+            this.setState({userPosition:{latitude,longitude}})
+            console.log(this.state.userPosition)
+          })
+
        }
 
 
