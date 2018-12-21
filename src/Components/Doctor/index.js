@@ -48,7 +48,13 @@ class Doctor extends Component {
                 <div className="Data-doctor">
                 <span>{doctor.name}</span>
                 <span>Odontologo</span>
-                <span> <FontAwesomeIcon icon="star" /></span>
+                
+                <div className = "score">
+                <span className ="star" > <FontAwesomeIcon icon="star" /></span>
+                <span className ="star" > <FontAwesomeIcon icon="star" /></span>
+                <span className ="star" > <FontAwesomeIcon icon="star" /></span>
+                </div>
+
                 <span>calle Marmolejo #107 col.cerro de la estrella int. 4 iztapalapa, CDMX</span>
                 </div>
             </div>
