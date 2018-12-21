@@ -67,46 +67,24 @@ class Content extends Component {
     </div>)
 })
 
-
       return (
         <div>
         <div className = 'principal-content'>
           <div className = 'specialties-content'>
             <h2>Encuentra tu servicio médico de confianza</h2>
-          <select className="custom-select" onChange={this.listTester} id="inputGroupSelect04" aria-label="Example select with button addon">
-                <option selected>Choose...</option>
+            <select className="custom-select" onChange={this.listTester} id="inputGroupSelect04" aria-label="Example select with button addon">
+              <option selected>ESPECIALIDADES</option>
                 {specialtiesDropdown}
-              </select>
-            <div className = 'specialties-dropdown'>
-              <a
-                className="dropdown-toggle"
-                href="#"
-                role="button"
-                id="dropdownMenuLink"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-              ESPECIALIDADES   
-              </a>
-            </div>
-            <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a className="dropdown-item" href="#">Odontologo</a>
-              <a className="dropdown-item" href="#">Oncologo</a>
-              <a className="dropdown-item" href="#">Dermatologo</a>
-              <a className="dropdown-item" href="#">Cardiologo</a>
-            </div> */}
-
+            </select>
             <div className = 'buttons'>
-            <button className = 'near btn btn-primary'>MÁS CERCANO</button>
-            <button className = 'quick btn btn-primary'>MÁS RÁPIDO</button>
+              <button className = 'near btn btn-primary'>MÁS CERCANO</button>
+              <button className = 'quick btn btn-primary'>EL MEJOR</button>
             </div>
             
           </div>
-         
         </div>
-         <div id="card-wrapper">{doctorsList}</div>
-         </div>
+        <div id="card-wrapper">{doctorsList}</div>
+        </div>
         )
     }
 }

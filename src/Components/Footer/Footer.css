@@ -1,5 +1,25 @@
+@media screen and (min-width: 250px) {
+
+}
+
+/* @media only screen and (min-width: 450px) {
+
+} */
+
+@media  screen and (min-width: 700px) {
+
+}
+
+/* @media screen and (min-width: 1000px) {
+
+} */
+
+@media screen and (min-width: 2000px) {
+
+}
+
 .footer {
-    height: 30vh;
+    height: 20vh;
     font-family: 'Quicksand', sans-serif;
     color: rgb(248, 248, 248);
 
@@ -14,16 +34,16 @@
     padding: 30px 0 50px 0;
 }
 
-.footer .footer-table {
+/* .footer .footer-table { */
     /* padding: 5%; */
 
 
-    width: 60%;
+    /* width: 60%;
     margin-bottom: 50px;
     display: flex;
     justify-content: space-around;
     padding: 20px 50px;
-}
+} */
 
 li {
     list-style: none;
