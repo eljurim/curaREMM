@@ -10,17 +10,17 @@ class Header extends Component{
             <div className = "image">
                 <img src = { logo } alt = "Logo curando.Me"/>
             </div>
-            <div className="buttons">
-                <div className = "nav-buttons">
+            {/* <div className="buttons">
+                <div className = "nav-buttons"> */}
                     {/* <button className="map btn btn-default" >MAPA</button> */}
                     {/* <button className="find btn btn-default">ENCUENTRA</button> */}
                     {/* <button className="schedule btn btn-default">AGENDA</button> */}
-                </div>  
-                <div className="access-buttons">
+                {/* </div>  
+                <div className="access-buttons"> */}
                     {/* <button className="register btn btn-primary">REGISTRO</button>
                     <button className="login btn btn-primary">LOGIN</button> */}
-                </div>
-            </div>
+                {/* </div> 
+            </div>*/}
         </div>
         )}
 }

@@ -1,5 +1,5 @@
 /* Para mobile phones: */
-@media screen and (min-width: 250px) {
+
     .principal-content {
         display: flex;
         justify-content: center;
@@ -32,12 +32,12 @@
     .custom-select {
         display: flex;
         /* flex-direction: column; */
-        width: 40vw;
+        width: 80vw;
         height: 7vh;
         color: #1976d2;
-        font-size: 0.6em; /* evaluar el mejor tamaño */
+        font-size: 0.6em;
         border: none;
-        box-shadow: 0 1px 6px 2px gray;
+        box-shadow: 0 1px 6px 2px grey;
     }
     
     option {
@@ -46,14 +46,18 @@
     }
     
     .buttons {
-        /* display: flex; */
+        display: flex; 
         justify-content: center;
-        align-items: center;
-        width: 40vw;
-        height: 10vh;
-        display: inline-flex;
+        /* align-items: center; */
+        width: 80vw;
+        /* height: 10vh; */
+        /* display: inline-flex; */
+        margin: 0;
         margin: initial;
-        margin-top: 2%;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
     }
     
     .buttons .near {
@@ -61,31 +65,33 @@
         margin-left: 2vw;
         height: 7vh;
         border-radius: 2px;
-        box-shadow: 0 1px 6px 2px gray;
+        box-shadow: 0 1px 6px 2px grey;
         font-size: 0.6em;
         font-weight: bold;
+        flex-grow: 1;
+        margin-bottom: 10px;
     }
     
     .buttons .quick {
-        margin-right: 2vw;
-        margin-left: 1.5vw;
+        margin-right: 1.5vw;
+        margin-left: 2vw;
         height: 7vh;
         border-radius: 2px;
-        box-shadow: 0 1px 6px 2px gray;
+        box-shadow: 0 1px 6px 2px grey;
         font-size: 0.6em;
         font-weight: bold;
+        flex-grow: 1;
     }
     
     #card-wrapper {
     display: flex;
     flex-direction: column;
     }
-}
 
 
 /* Para tablets */
-@media only screen and (min-width: 450px) {
-    .principal-content {
+@media screen and (min-width: 768px) {
+    /* .principal-content {
         display: flex;
         justify-content: center;
         width: 90vw;
@@ -95,34 +101,32 @@
         box-shadow: 0 1px 3px 2px gray;
         margin: 2% 5vw 2% 5vw;
         padding: 2%;
-      }
+      } */
     
-      .specialties-content {
+      /* .specialties-content {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
+    } */
     
-    .specialties-content h2 {
-        font-family: 'Quicksand', sans-serif; /* Cambiar por otra fuente */
+    /* .specialties-content h2 {
+        font-family: 'Quicksand', sans-serif; 
         color:#4d4e4e;
-        font-weight: 400; /* Evaluar el weight adecuado al tamaño */
-        font-size: 1em; /* Evaluar el mejor tamaño */
+        font-weight: 400; 
+        font-size: 1em; 
         text-align: center;
         padding-bottom: 2%;
         margin-bottom: 3%;
-    }
+    } */
     
     .custom-select {
         display: flex;
-        /* flex-direction: column; */
-        width: 33vw;
+        width: 40vw;
         height: 7vh;
         box-shadow: 0 1px 6px 2px gray;
         color: #1976d2;
-        font-size: 0.7em; /* evaluar el mejor tamaño */
-    
+        font-size: 0.7em;
     }
     option {
         display:flex;
@@ -130,18 +134,18 @@
     }
     
     .buttons {
-        /* display: flex; */
+        display: flex;
         justify-content: center;
         align-items: center;
         width: 40vw;
-        height: 10vh;
-        margin-top:2%;
+        /* height: 10vh; */
+        margin-top:4%;
     }
     
     .buttons .near {
         margin-right: 1.5vw;
         margin-left: 2vw;
-        height: 7vh;
+        /* height: 7vh; */
         border-radius: 2px;
         box-shadow: 0 1px 6px 2px gray;
         font-size: 0.7em;
@@ -164,242 +168,3 @@
     }
   }
 
-
-/* Para desktops */
-@media  screen and (min-width: 700px) {
-    .principal-content {
-        display: flex;
-        justify-content: center;
-        width: 90vw;
-        height: 40vh;
-        background-color: #ffffff;
-        border-radius: 2px;
-        box-shadow: 0 1px 3px 2px gray;
-        margin: 2% 5vw 2% 5vw;
-        padding: 2%;
-      }
-    
-      .specialties-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .specialties-content h2 {
-        font-family: 'Quicksand', sans-serif; /* Cambiar por otra fuente */
-        color:#4d4e4e;
-        font-weight: 400; /* Evaluar el weight adecuado al tamaño */
-        font-size: 1em; /* Evaluar el mejor tamaño */
-        text-align: center;
-        padding-bottom: 2%;
-        margin-bottom: 3%;
-    }
-    
-    .custom-select {
-        display: flex;
-        /* flex-direction: column; */
-        width: 33vw;
-        height: 7vh;
-        box-shadow: 0 1px 6px 2px gray;
-        color: #1976d2;
-        font-size: 0.7em; /* evaluar el mejor tamaño */
-    
-    }
-    option {
-        display:flex;
-        padding: 20%;
-    }
-    
-    .buttons {
-        /* display: flex; */
-        justify-content: center;
-        align-items: center;
-        width: 40vw;
-        height: 10vh;
-        margin-top:2%;
-    }
-    
-    .buttons .near {
-        margin-right: 1.5vw;
-        margin-left: 2vw;
-        height: 7vh;
-        border-radius: 2px;
-        box-shadow: 0 1px 6px 2px gray;
-        font-size: 0.7em;
-        font-weight: bold;
-    }
-    
-    .buttons .quick {
-        margin-right: 2vw;
-        margin-left: 1.5vw;
-        height: 7vh;
-        border-radius: 2px;
-        box-shadow: 0 1px 6px 2px gray;
-        font-size: 0.7em;
-        font-weight: bold;
-    }
-    
-    #card-wrapper {
-    display: flex;
-    flex-direction: column;
-    }
-  }
-
-
-@media screen and (min-width: 1000px) {
-    .principal-content {
-        display: flex;
-        justify-content: center;
-        width: 90vw;
-        height: 40vh;
-        background-color: #ffffff;
-        border-radius: 2px;
-        box-shadow: 0 1px 3px 2px gray;
-        margin: 2% 5vw 2% 5vw;
-        padding: 2%;
-    }
-    
-    .specialties-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .specialties-content h2 {
-        font-family: 'Quicksand', sans-serif; /* Cambiar por otra fuente */
-        color:#4d4e4e;
-        font-weight: 500;
-        font-size: 1.4em; 
-        text-align: center;
-        padding-bottom: 2%;
-        margin-bottom: 3%;
-    }
-    
-    .custom-select {
-        display: flex;
-        /* flex-direction: column; */
-        width: 33vw;
-        height: 7vh;
-        color: #1976d2;
-        font-size: 0.9em;
-    }
-    option {
-        display:flex;
-        padding: 20%;
-    }
-    
-    .buttons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40vw;
-        height: 10vh;
-        margin-top:2%;
-    }
-    
-    .buttons .near {
-        margin-right: 1.5vw;
-        margin-left: 2vw;
-        height: 7vh;
-        border-radius: 2px;
-        box-shadow: 0 1px 6px 2px gray;
-        font-size: 0.9em;
-        font-weight: bold;
-    }
-    
-    .buttons .quick {
-        margin-right: 2vw;
-        margin-left: 1.5vw;
-        height: 7vh;
-        border-radius: 2px;
-        box-shadow: 0 1px 6px 2px gray;
-        font-size: 0.9em;
-        font-weight: bold;
-    }
-    
-    #card-wrapper {
-    display: flex;
-    flex-direction: column;
-    }   
-}
-/* Finaliza desktops */ 
-
-@media screen and (min-width: 2000px) {
-    .principal-content {
-        display: flex;
-        justify-content: center;
-        width: 90vw;
-        height: 40vh;
-        background-color: #ffffff;
-        border-radius: 2px;
-        box-shadow: 0 1px 3px 2px gray;
-        margin: 2% 5vw 2% 5vw;
-        padding: 2%;
-    }
-    
-    .specialties-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .specialties-content h2 {
-        font-family: 'Quicksand', sans-serif; /* Cambiar por otra fuente */
-        color:#4d4e4e;
-        font-weight: 500;
-        font-size: 1.9em; 
-        text-align: center;
-        padding-bottom: 2%;
-        margin-bottom: 3%;
-    }
-    
-    .custom-select {
-        display: flex;
-        /* flex-direction: column; */
-        width: 33vw;
-        height: 6vh;
-        color: #1976d2;
-        font-size: 1.3em;
-    }
-    option {
-        display:flex;
-        padding: 20%;
-    }
-    
-    .buttons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40vw;
-        height: 8vh;
-        margin-top:2%;
-    }
-    
-    .buttons .near {
-        margin-right: 1.5vw;
-        margin-left: 2vw;
-        height: 6vh;
-        border-radius: 2px;
-        box-shadow: 0 1px 6px 2px gray;
-        font-size: 1.3em;
-        font-weight: bold;
-    }
-    
-    .buttons .quick {
-        margin-right: 2vw;
-        margin-left: 1.5vw;
-        height: 6vh;
-        border-radius: 2px;
-        box-shadow: 0 1px 6px 2px gray;
-        font-size: 1.3em;
-        font-weight: bold;
-    }
-    
-    #card-wrapper {
-    display: flex;
-    flex-direction: column;
-    }   
-}

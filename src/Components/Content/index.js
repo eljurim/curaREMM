@@ -77,7 +77,7 @@ class Content extends Component {
                 {specialtiesDropdown}
             </select>
             <div className = 'buttons'>
-              <button className = 'near btn btn-primary'>MÁS CERCANO</button>
+              <button className = 'near btn btn-primary'>EL MÁS CERCANO</button>
               <button className = 'quick btn btn-primary'>EL MEJOR</button>
             </div>
             
