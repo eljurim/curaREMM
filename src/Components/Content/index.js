@@ -164,28 +164,30 @@ class Content extends Component {
     </div>)
 })
 
-
       return (
         <div>
         <div className = 'principal-content'>
           <div className = 'specialties-content'>
             <h2>Encuentra tu servicio médico de confianza</h2>
+
             <h3>Selecciona la especialidad</h3>
           <select className="custom-select" onChange={this.listTester} id="inputGroupSelect04" aria-label="Example select with button addon">
                 <option selected>Choose...</option>
                 {specialtiesDropdown}
+
               </select>
 
             <div className = 'buttons'>
             <button className = 'near btn btn-primary' onClick={this.sortByNearest}>MÁS CERCANO</button>
+
             <button className = 'quick btn btn-primary' onClick={this.sortByQualification}>MEJOR CALIFICADO</button>
+
             </div>
             
           </div>
-         
         </div>
-         <div id="card-wrapper">{doctorsList}</div>
-         </div>
+        <div id="card-wrapper">{doctorsList}</div>
+        </div>
         )
     }
 }
