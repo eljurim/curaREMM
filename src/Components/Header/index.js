@@ -7,9 +7,9 @@ class Header extends Component{
         return(
         <div className = "header">
             <div className = "image">
-                <img src = { logo } alt = "Logo curando.Me"/>
+                <img src = { logo } className="img-fluid" alt = "Logo curando.Me"/>
             </div>
-            <div className="buttons">
+            <div className="buttons d-none d-lg-block d-xl-none">
                 <div className = "nav-buttons">
                     {/* <button className="map btn btn-default" >MAPA</button> */}
                     <button className="find btn btn-default">ENCUENTRA</button>

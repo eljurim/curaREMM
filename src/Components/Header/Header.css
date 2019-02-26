@@ -19,8 +19,9 @@
 }
 
 .header .image img {
-    width: 14vw;
-    height: 12vh;
+    width: 50%;
+    margin-left: 25%
+
 }
 
 .buttons {
