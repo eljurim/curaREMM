@@ -1,5 +1,10 @@
 import React , { Component } from 'react';
+<<<<<<< HEAD
+// import logo from '../../assets/curandoMe-white-logo-min.png';
+import logo from '../../curandoMe-white-logo-min.png';
+=======
 import logo from '../../assets/curandoMe-white-logo-min.png';
+>>>>>>> master
 
 import './Header.css'
 class Header extends Component{
@@ -9,17 +14,17 @@ class Header extends Component{
             <div className = "image">
                 <img src = { logo } alt = "Logo curando.Me"/>
             </div>
-            <div className="buttons">
-                <div className = "nav-buttons">
+            {/* <div className="buttons">
+                <div className = "nav-buttons"> */}
                     {/* <button className="map btn btn-default" >MAPA</button> */}
-                    <button className="find btn btn-default">ENCUENTRA</button>
-                    <button className="schedule btn btn-default">AGENDA</button>
-                </div>  
-                <div className="access-buttons">
-                    <button className="register btn btn-primary">REGISTRO</button>
-                    <button className="login btn btn-primary">LOGIN</button>
-                </div>
-            </div>
+                    {/* <button className="find btn btn-default">ENCUENTRA</button> */}
+                    {/* <button className="schedule btn btn-default">AGENDA</button> */}
+                {/* </div>  
+                <div className="access-buttons"> */}
+                    {/* <button className="register btn btn-primary">REGISTRO</button>
+                    <button className="login btn btn-primary">LOGIN</button> */}
+                {/* </div> 
+            </div>*/}
         </div>
         )}
 }
