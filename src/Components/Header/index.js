@@ -1,6 +1,10 @@
 import React , { Component } from 'react';
+<<<<<<< HEAD
 // import logo from '../../assets/curandoMe-white-logo-min.png';
 import logo from '../../curandoMe-white-logo-min.png';
+=======
+import logo from '../../assets/curandoMe-white-logo-min.png';
+>>>>>>> master
 
 import './Header.css'
 class Header extends Component{

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Para mobile phones: */
 
     .principal-content {
@@ -84,6 +85,26 @@
     }
     
     #card-wrapper {
+=======
+.principal-content {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    height: 40vh;
+    background-color: #FEF6FF;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px 2px gray;
+    margin: 2% 5vw 2% 5vw;
+    padding: 2%;
+}
+img{
+    height: 20px;
+    display: inline-block;
+}
+.specialties-content {
+    /* width: 100%; */
+    /* min-height: calc(100vh - 200px); */
+>>>>>>> master
     display: flex;
     flex-direction: column;
     }
@@ -168,3 +189,17 @@
     }
   }
 
+<<<<<<< HEAD
+=======
+#card-wrapper {
+display: flex;
+
+flex-direction: row;
+
+width: 100%;
+
+flex-wrap: wrap;
+
+justify-content: space-around;
+}
+>>>>>>> master
