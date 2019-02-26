@@ -18,8 +18,11 @@
 }
 
 .header .image img {
-    width: 43vw;
-    /* height: 12vh; */
+
+    width: 50%;
+    margin-left: 25%
+
+
 }
 
 @media screen and (min-width: 720px) {

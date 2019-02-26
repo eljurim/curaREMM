@@ -1,113 +1,33 @@
-<<<<<<< HEAD
-/* Para mobile phones: */
 
-    .principal-content {
-        display: flex;
-        justify-content: center;
-        width: 90vw;
-        height: 40vh;
-        background-color: #ffffff;
-        border-radius: 2px;
-        box-shadow: 0 1px 3px 2px gray;
-        margin: 2% 5vw 2% 5vw;
-        padding: 2%;
-      }
-    
-    .specialties-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .specialties-content h2 {
-        font-family: 'Quicksand', sans-serif; /* Cambiar por otra fuente */
-        color:#4d4e4e;
-        font-weight: 400; /* Evaluar el weight adecuado al tamaño */
-        font-size: .9em; /* Evaluar el mejor tamaño */
-        text-align: center;
-        padding-bottom: 2%;
-        margin-bottom: 3%;
-    }
-    
-    .custom-select {
-        display: flex;
-        /* flex-direction: column; */
-        width: 80vw;
-        height: 7vh;
-        color: #1976d2;
-        font-size: 0.6em;
-        border: none;
-        box-shadow: 0 1px 6px 2px grey;
-    }
-    
-    option {
-        display:flex;
-        padding: 20%;
-    }
-    
-    .buttons {
-        display: flex; 
-        justify-content: center;
-        /* align-items: center; */
-        width: 80vw;
-        /* height: 10vh; */
-        /* display: inline-flex; */
-        margin: 0;
-        margin: initial;
-        margin-top: 20px;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-    }
-    
-    .buttons .near {
-        margin-right: 1.5vw;
-        margin-left: 2vw;
-        height: 7vh;
-        border-radius: 2px;
-        box-shadow: 0 1px 6px 2px grey;
-        font-size: 0.6em;
-        font-weight: bold;
-        flex-grow: 1;
-        margin-bottom: 10px;
-    }
-    
-    .buttons .quick {
-        margin-right: 1.5vw;
-        margin-left: 2vw;
-        height: 7vh;
-        border-radius: 2px;
-        box-shadow: 0 1px 6px 2px grey;
-        font-size: 0.6em;
-        font-weight: bold;
-        flex-grow: 1;
-    }
-    
-    #card-wrapper {
-=======
-.principal-content {
-    display: flex;
-    justify-content: center;
-    width: 90vw;
-    height: 40vh;
-    background-color: #FEF6FF;
-    border-radius: 2px;
-    box-shadow: 0 1px 3px 2px gray;
-    margin: 2% 5vw 2% 5vw;
-    padding: 2%;
-}
-img{
-    height: 20px;
-    display: inline-block;
-}
-.specialties-content {
-    /* width: 100%; */
-    /* min-height: calc(100vh - 200px); */
->>>>>>> master
     display: flex;
     flex-direction: column;
     }
+
+
+.specialties-content h3 {
+    font-family: 'Quicksand', sans-serif; /* Cambiar por otra fuente */
+    color:#4d4e4e;
+    font-weight: 1000;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 2%;
+    margin-bottom: 3%;
+}
+
+.custom-select {
+    display: flex;
+    flex-direction: column;
+    width: 33vw;
+    height: 7vh;
+    color: #1976d2;
+    font-size: .9rem;
+}
+option {
+    display:flex;
+    /* justify-content: center;
+    justify-items: center;  */
+    padding: 20%;
+}
 
 
 /* Para tablets */
@@ -189,8 +109,7 @@ img{
     }
   }
 
-<<<<<<< HEAD
-=======
+
 #card-wrapper {
 display: flex;
 
@@ -202,4 +121,3 @@ flex-wrap: wrap;
 
 justify-content: space-around;
 }
->>>>>>> master
